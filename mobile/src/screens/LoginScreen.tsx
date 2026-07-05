@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useAppDispatch } from '../app/hooks';
 import { signedIn } from '../app/slices/authSlice';
 import { signInWithGoogle } from '../services/googleAuth';
+import { apiClient, setAccessToken } from '../api/client';
 import { generateId } from '../services/tickets';
 import type { RootScreenProps } from '../navigation/types';
 
@@ -26,7 +27,20 @@ export function LoginScreen({ navigation, route }: RootScreenProps<'Login'>) {
   const onGoogle = async () => {
     setBusy(true);
     try {
-      const profile = await signInWithGoogle();
+      const { profile, idToken } = await signInWithGoogle();
+
+      // Exchange the Google ID token for a SujoyDev JWT. If the backend is
+      // unreachable the local session still works; the API is simply not
+      // authenticated until the next sign-in.
+      if (idToken) {
+        try {
+          const { data } = await apiClient.post('/auth/google', { idToken });
+          setAccessToken(data.data.accessToken as string);
+        } catch {
+          // Offline or backend not deployed yet — continue with local session.
+        }
+      }
+
       dispatch(signedIn(profile));
       finishLogin();
     } catch (e) {

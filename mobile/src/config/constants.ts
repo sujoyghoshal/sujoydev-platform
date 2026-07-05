@@ -7,6 +7,13 @@ export const APP_VERSION = '1.0.0';
  */
 export const API_BASE_URL = 'http://10.0.2.2:5000/api/v1';
 
+/**
+ * OAuth 2.0 **Web client ID** from Google Cloud console → Credentials.
+ * Setup steps + this project's SHA-1 fingerprints: docs/GOOGLE_AUTH.md.
+ * Must match GOOGLE_WEB_CLIENT_ID in backend/.env.
+ */
+export const GOOGLE_WEB_CLIENT_ID = '';
+
 export const DEVELOPER = {
   name: 'Sujoy Ghoshal',
   title: 'Full Stack Developer',
