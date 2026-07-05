@@ -12,7 +12,8 @@ export const API_BASE_URL = 'http://10.0.2.2:5000/api/v1';
  * Setup steps + this project's SHA-1 fingerprints: docs/GOOGLE_AUTH.md.
  * Must match GOOGLE_WEB_CLIENT_ID in backend/.env.
  */
-export const GOOGLE_WEB_CLIENT_ID = '';
+export const GOOGLE_WEB_CLIENT_ID =
+  '10728362727-ffgs5dt0na8jbij8u6089paa3uhakj5u.apps.googleusercontent.com';
 
 export const DEVELOPER = {
   name: 'Sujoy Ghoshal',
