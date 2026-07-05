@@ -23,7 +23,8 @@ export const DEVELOPER = {
   github: 'https://github.com/sujoyghoshal',
   linkedin: 'https://www.linkedin.com/in/sujoy-ghoshal',
   portfolio: 'https://sujoydev.vercel.app',
-  resumeUrl: 'https://sujoydev.vercel.app/resume.pdf',
+  resumeUrl:
+    'https://raw.githubusercontent.com/sujoyghoshal/SujoyDev/main/docs/resume/Sujoy_Ghoshal_Resume.pdf',
   availableForFreelance: true,
 };
 

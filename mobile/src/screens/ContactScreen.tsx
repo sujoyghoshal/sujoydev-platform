@@ -1,6 +1,6 @@
 import React from 'react';
-import { Linking, ScrollView, StyleSheet } from 'react-native';
-import { List, Surface, Text, useTheme } from 'react-native-paper';
+import { Linking, ScrollView, StyleSheet, View } from 'react-native';
+import { Avatar, List, Surface, Text, useTheme } from 'react-native-paper';
 import { DEVELOPER } from '../config/constants';
 
 interface ContactAction {
@@ -24,12 +24,17 @@ export function ContactScreen() {
   return (
     <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <Surface style={[styles.banner, { backgroundColor: theme.colors.primaryContainer }]} elevation={0}>
-        <Text variant="titleLarge" style={[styles.bannerTitle, { color: theme.colors.onPrimaryContainer }]}>
-          Let’s talk about your project
-        </Text>
-        <Text variant="bodyMedium" style={{ color: theme.colors.onPrimaryContainer, opacity: 0.85, marginTop: 6 }}>
-          I usually reply within a few hours. Choose whichever channel works best for you.
-        </Text>
+        <View style={styles.bannerRow}>
+          <View style={styles.bannerText}>
+            <Text variant="titleLarge" style={[styles.bannerTitle, { color: theme.colors.onPrimaryContainer }]}>
+              Let’s talk about your project
+            </Text>
+            <Text variant="bodyMedium" style={{ color: theme.colors.onPrimaryContainer, opacity: 0.85, marginTop: 6 }}>
+              I usually reply within a few hours. Choose whichever channel works best for you.
+            </Text>
+          </View>
+          <Avatar.Image size={64} source={require('../assets/images/profile.jpg')} />
+        </View>
       </Surface>
 
       {ACTIONS.map((action) => (
@@ -50,6 +55,8 @@ export function ContactScreen() {
 const styles = StyleSheet.create({
   scroll: { paddingBottom: 32 },
   banner: { margin: 16, borderRadius: 20, padding: 20 },
+  bannerRow: { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  bannerText: { flex: 1 },
   bannerTitle: { fontWeight: '800' },
   item: { paddingHorizontal: 8 },
 });

@@ -62,11 +62,10 @@ export function HomeScreen() {
                   {DEVELOPER.tagline}
                 </Text>
               </View>
-              <Avatar.Text
-                size={72}
-                label="SG"
+              <Avatar.Image
+                size={84}
+                source={require('../assets/images/profile.jpg')}
                 style={{ backgroundColor: theme.colors.primary }}
-                color={theme.colors.onPrimary}
               />
             </View>
             <View style={styles.heroButtons}>

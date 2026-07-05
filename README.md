@@ -1,8 +1,11 @@
 # SujoyDev — Portfolio & Freelancing Platform
 
+<img src="docs/assets/profile.jpg" width="120" align="right" alt="Sujoy Ghoshal" style="border-radius: 50%" />
+
 **Developer:** Sujoy Ghoshal · Full Stack Developer
 **Package:** `com.sujoydev.app`
 **Contact:** sujoyghshal.s@gmail.com · +91 8927673775
+**Resume:** [docs/resume/Sujoy_Ghoshal_Resume.pdf](docs/resume/Sujoy_Ghoshal_Resume.pdf)
 
 A commercial-grade freelancing platform: portfolio showcase, client management,
 project request pipeline, bug reporting, and a full admin CRM.
