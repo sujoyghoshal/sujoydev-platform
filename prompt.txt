@@ -1,0 +1,1046 @@
+# ROLE
+
+You are an Elite Software Architect, Senior React Native Developer, Senior Node.js Developer, MongoDB Database Architect, DevOps Engineer, UI/UX Designer, Security Engineer, and Google Play Store Release Engineer with 15+ years of experience.
+
+Your task is to build a COMPLETE production-ready Android application called **SujoyDev** along with a full-featured **Admin Dashboard**, **Backend API**, and **MongoDB database**.
+
+This is a real commercial freelancing application, not a demo.
+
+Generate enterprise-level code only.
+
+Never use placeholder code.
+Never leave TODO comments.
+Generate every file completely.
+Follow best practices.
+Generate one step at a time and wait for my confirmation.
+
+---
+
+# PROJECT NAME
+
+SujoyDev
+
+Package Name:
+com.sujoydev.app
+
+Developer:
+Sujoy Ghoshal
+
+Experience:
+1+ Years
+
+Profession:
+Full Stack Developer
+
+Purpose:
+Portfolio + Freelancing Platform + Client Management System + Project Request System + Bug Reporting + Admin CRM.
+
+---
+
+# TECHNOLOGY STACK
+
+## Mobile
+
+React Native (Latest Stable)
+
+TypeScript
+
+Redux Toolkit
+
+React Navigation v7
+
+Material Design 3
+
+React Native Reanimated
+
+Gesture Handler
+
+React Hook Form
+
+Yup
+
+Axios
+
+Lottie
+
+AsyncStorage
+
+React Native Paper
+
+Firebase Cloud Messaging (Notifications only)
+
+Google Authentication
+
+Image Picker
+
+Document Picker
+
+Fast Image
+
+Dark Mode
+
+Offline Cache
+
+---
+
+## Backend
+
+Node.js
+
+Express.js
+
+TypeScript
+
+REST API
+
+JWT Authentication
+
+Role-Based Authentication
+
+Helmet
+
+CORS
+
+Compression
+
+Rate Limiter
+
+Multer
+
+Cloudinary (Image Storage)
+
+Morgan
+
+Bcrypt
+
+Cookie Parser
+
+Socket.IO
+
+Nodemailer
+
+Validation
+
+Error Middleware
+
+Logger
+
+Cron Jobs
+
+---
+
+## Database
+
+MongoDB Atlas
+
+Mongoose
+
+Database Indexing
+
+Aggregation Pipelines
+
+Transactions
+
+Backup Ready
+
+Optimized Queries
+
+Soft Delete
+
+Audit Logs
+
+---
+
+## Admin Dashboard
+
+React.js
+
+TypeScript
+
+Vite
+
+Material UI
+
+Redux Toolkit
+
+React Router
+
+React Query
+
+Charts
+
+Tables
+
+Analytics
+
+Responsive Dashboard
+
+Dark Mode
+
+---
+
+# USER APP FEATURES
+
+Users can
+
+View Portfolio
+
+Browse Projects
+
+Browse Services
+
+Read Blogs
+
+Contact Me
+
+Hire Me
+
+Request Website
+
+Request Android App
+
+Request Backend
+
+Submit Bug
+
+Download Resume
+
+View Testimonials
+
+Save Favorites
+
+Track Request Status
+
+Receive Notifications
+
+Manage Profile
+
+Change Password
+
+Logout
+
+---
+
+# LOGIN
+
+Browse without login.
+
+Require login only for
+
+Hire Me
+
+Project Request
+
+Bug Report
+
+Reviews
+
+Favorites
+
+Profile
+
+Notifications
+
+Authentication
+
+Google Login
+
+JWT
+
+Refresh Token
+
+MongoDB User Storage
+
+---
+
+# HOME
+
+Premium Hero
+
+Animated Banner
+
+Profile
+
+About
+
+Experience
+
+Skills
+
+Featured Projects
+
+Statistics
+
+Testimonials
+
+Hire Me CTA
+
+Contact CTA
+
+Available for Freelancing
+
+Technology Stack
+
+Latest Blogs
+
+---
+
+# PROJECTS
+
+Beautiful Cards
+
+Search
+
+Filter
+
+Categories
+
+Technology Used
+
+Screenshots
+
+GitHub
+
+Live Demo
+
+Play Store
+
+Client Review
+
+Favorite
+
+Share
+
+---
+
+# SERVICES
+
+Website Development
+
+Android Development
+
+React Native
+
+Node.js
+
+REST API
+
+MongoDB
+
+Firebase
+
+Bug Fixing
+
+Performance Optimization
+
+UI/UX
+
+Admin Panel
+
+Landing Page
+
+Custom Software
+
+Pricing
+
+Delivery Time
+
+Hire Button
+
+---
+
+# BLOG
+
+Programming
+
+Career
+
+React Native
+
+Node.js
+
+JavaScript
+
+TypeScript
+
+Backend
+
+Database
+
+Freelancing
+
+Interview
+
+Search
+
+Bookmark
+
+Share
+
+---
+
+# CONTACT
+
+Phone
+
+8927673775
+
+Email
+
+sujoyghshal.s@gmail.com
+
+WhatsApp
+
+Call
+
+Email
+
+LinkedIn
+
+GitHub
+
+Portfolio
+
+Contact Form
+
+---
+
+# PROJECT REQUEST
+
+Fields
+
+Name
+
+Company
+
+Email
+
+Phone
+
+Budget
+
+Timeline
+
+Project Type
+
+Priority
+
+Description
+
+Attachment
+
+Submit
+
+Save in MongoDB
+
+Notify Admin
+
+Generate Ticket Number
+
+Track Status
+
+---
+
+# BUG REPORT
+
+Title
+
+Description
+
+Priority
+
+Screenshot
+
+Device Info
+
+OS
+
+App Version
+
+Logs
+
+Submit
+
+Save MongoDB
+
+Notify Admin
+
+Generate Ticket
+
+---
+
+# USER PROFILE
+
+Edit Profile
+
+Photo
+
+Phone
+
+Email
+
+Projects
+
+History
+
+Notifications
+
+Saved Items
+
+Settings
+
+Logout
+
+Delete Account
+
+---
+
+# PUSH NOTIFICATIONS
+
+Project Accepted
+
+Project Rejected
+
+Message Received
+
+Bug Fixed
+
+Offer
+
+Admin Announcement
+
+---
+
+# ADMIN PANEL
+
+Professional Enterprise Dashboard
+
+Responsive
+
+Desktop First
+
+Dark Mode
+
+Charts
+
+Real-time Data
+
+Search
+
+Export
+
+Filters
+
+Audit Logs
+
+Notifications
+
+Role-Based Access
+
+---
+
+## ADMIN LOGIN
+
+Secure JWT
+
+Refresh Token
+
+2FA Ready
+
+Role-Based Access
+
+Admin Only
+
+---
+
+## ADMIN DASHBOARD
+
+Total Users
+
+Total Clients
+
+Total Project Requests
+
+Completed Projects
+
+Pending Projects
+
+Revenue
+
+Messages
+
+Bug Reports
+
+Reviews
+
+Visitors
+
+Downloads
+
+Today's Activity
+
+Monthly Analytics
+
+Charts
+
+Recent Activity
+
+---
+
+## USER MANAGEMENT
+
+View Users
+
+Search Users
+
+Filter
+
+Edit
+
+Disable
+
+Enable
+
+Delete
+
+Ban
+
+View Profile
+
+View History
+
+Export Users
+
+---
+
+## PROJECT MANAGEMENT
+
+Create
+
+Edit
+
+Delete
+
+Assign
+
+Approve
+
+Reject
+
+Archive
+
+Categories
+
+Tags
+
+Images
+
+Technology
+
+Status
+
+Timeline
+
+Budget
+
+---
+
+## SERVICE MANAGEMENT
+
+Create
+
+Edit
+
+Delete
+
+Price
+
+Duration
+
+Category
+
+Featured
+
+Visibility
+
+---
+
+## BLOG MANAGEMENT
+
+Create
+
+Edit
+
+Delete
+
+Publish
+
+Draft
+
+SEO
+
+Categories
+
+Tags
+
+Thumbnail
+
+Comments
+
+---
+
+## PROJECT REQUEST MANAGEMENT
+
+View All Requests
+
+Search
+
+Filter
+
+Approve
+
+Reject
+
+Assign Status
+
+Update Progress
+
+Send Message
+
+Export CSV
+
+Print
+
+---
+
+## BUG MANAGEMENT
+
+View Bugs
+
+Assign Priority
+
+Assign Developer
+
+Mark Fixed
+
+Close Ticket
+
+Export
+
+---
+
+## CLIENT MESSAGE MANAGEMENT
+
+Inbox
+
+Reply
+
+Archive
+
+Delete
+
+Search
+
+Attachments
+
+---
+
+## TESTIMONIAL MANAGEMENT
+
+Approve
+
+Reject
+
+Delete
+
+Pin
+
+Featured
+
+---
+
+## NOTIFICATION MANAGEMENT
+
+Send Notification
+
+Target Users
+
+Broadcast
+
+Schedule
+
+History
+
+---
+
+## ANALYTICS
+
+User Growth
+
+Downloads
+
+Revenue
+
+Traffic
+
+Device Types
+
+Countries
+
+Projects
+
+Popular Services
+
+Popular Blogs
+
+Charts
+
+Graphs
+
+---
+
+## SETTINGS
+
+General
+
+App Version
+
+Maintenance Mode
+
+Email
+
+SMTP
+
+Logo
+
+Banner
+
+Social Links
+
+Privacy Policy
+
+Terms
+
+Backup Database
+
+Restore Database
+
+API Keys
+
+Security
+
+---
+
+# DATABASE COLLECTIONS
+
+users
+
+admins
+
+projects
+
+services
+
+blogs
+
+messages
+
+notifications
+
+project_requests
+
+bug_reports
+
+testimonials
+
+reviews
+
+favorites
+
+analytics
+
+audit_logs
+
+settings
+
+sessions
+
+roles
+
+permissions
+
+activity_logs
+
+---
+
+# API MODULES
+
+Authentication
+
+Users
+
+Admin
+
+Projects
+
+Services
+
+Blogs
+
+Messages
+
+Notifications
+
+Reviews
+
+Bug Reports
+
+Project Requests
+
+Analytics
+
+Settings
+
+Upload
+
+Dashboard
+
+Search
+
+---
+
+# SECURITY
+
+JWT
+
+Refresh Token
+
+Role-Based Authorization
+
+Helmet
+
+Rate Limiter
+
+MongoDB Validation
+
+Password Hashing
+
+Input Sanitization
+
+XSS Protection
+
+CSRF Protection
+
+SQL Injection Prevention
+
+Secure Headers
+
+Environment Variables
+
+Encrypted Secrets
+
+Audit Logging
+
+---
+
+# PERFORMANCE
+
+Caching
+
+Pagination
+
+Lazy Loading
+
+Image Optimization
+
+MongoDB Indexing
+
+Aggregation
+
+Compression
+
+Reusable Components
+
+Code Splitting
+
+Optimized Rendering
+
+---
+
+# DEPLOYMENT
+
+Backend:
+Docker + VPS/Render/Railway
+
+Database:
+MongoDB Atlas
+
+Admin:
+Vercel
+
+Android:
+Google Play Store
+
+Generate:
+
+Dockerfile
+
+Docker Compose
+
+Nginx Config
+
+Environment Files
+
+Deployment Guide
+
+Google Play Store Release
+
+Signed AAB
+
+Play Console Checklist
+
+Privacy Policy
+
+Terms & Conditions
+
+Data Safety Form
+
+---
+
+# PROJECT STRUCTURE
+
+Generate a professional enterprise folder structure for:
+
+1. React Native Android App
+2. Node.js Backend
+3. React Admin Dashboard
+4. MongoDB Models
+5. REST API
+6. Documentation
+
+Every module should be scalable, reusable, secure, and production-ready.
+
+---
+
+# FINAL REQUIREMENTS
+
+Build a commercial-grade freelancing platform similar in quality to Fiverr or Upwork (feature scope only, not design copying), focused on showcasing my portfolio and managing freelance clients.
+
+The project must include:
+- React Native Android app
+- React Admin Dashboard
+- Node.js + Express backend
+- MongoDB Atlas database
+- JWT authentication
+- Google Sign-In
+- Role-based access (Admin/User)
+- Complete REST APIs
+- Real-time notifications
+- Analytics
+- Monitoring
+- Logging
+- Error handling
+- Security best practices
+- Google Play Store deployment support
+
+Generate the project step by step, with complete code for every file, and stop after each step for confirmation before proceeding.
