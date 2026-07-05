@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+.pnp/
+
+# Builds
+dist/
+build/
+*.tsbuildinfo
+admin/dist/
+backend/dist/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.keystore
+!debug.keystore
+google-services.json
+firebase-service-account.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# React Native / Android
+mobile/android/app/build/
+mobile/android/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/.bundle/
+mobile/vendor/
+*.aab
+*.apk
+!*-debug.apk
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Test coverage
+coverage/
+
+# Misc
+.cache/
+.temp/
+
+# Signing secrets
+keystore.properties
