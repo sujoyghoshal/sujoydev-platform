@@ -1,6 +1,6 @@
 import React from 'react';
-import { Linking, ScrollView, StyleSheet, View } from 'react-native';
-import { Avatar, Button, Divider, List, SegmentedButtons, Text, useTheme } from 'react-native-paper';
+import { ScrollView, StyleSheet, View } from 'react-native';
+import { Avatar, Button, Divider, List, SegmentedButtons, Surface, Text, useTheme } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -8,7 +8,8 @@ import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { signedOut } from '../app/slices/authSlice';
 import { setThemeMode, ThemeMode } from '../app/slices/themeSlice';
 import { signOutGoogle } from '../services/googleAuth';
-import { DEVELOPER, APP_VERSION } from '../config/constants';
+import { APP_VERSION } from '../config/constants';
+import { brand, radius, shadow, spacing } from '../theme/tokens';
 import type { RootStackParamList } from '../navigation/types';
 
 export function ProfileScreen() {
@@ -28,27 +29,34 @@ export function ProfileScreen() {
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
-        <View style={styles.header}>
-          {user?.photoUrl ? (
-            <Avatar.Image size={72} source={{ uri: user.photoUrl }} />
-          ) : (
-            <Avatar.Icon size={72} icon="account" style={{ backgroundColor: theme.colors.primaryContainer }} color={theme.colors.onPrimaryContainer} />
-          )}
-          <View style={styles.headerText}>
-            <Text variant="titleLarge" style={styles.name}>
-              {isAuthenticated ? user?.name : 'Welcome'}
-            </Text>
-            <Text variant="bodySmall" style={styles.email}>
-              {isAuthenticated ? user?.email : 'Sign in to submit requests and track tickets'}
-            </Text>
+        <Surface style={[styles.headerCard, { backgroundColor: theme.colors.primaryContainer }]} elevation={0}>
+          <View style={[styles.headerBlob, { backgroundColor: theme.dark ? brand.heroBlobDarkA : brand.heroBlobA }]} />
+          <View style={styles.header}>
+            {user?.photoUrl ? (
+              <Avatar.Image size={68} source={{ uri: user.photoUrl }} />
+            ) : (
+              <Avatar.Icon
+                size={68}
+                icon="account"
+                style={{ backgroundColor: theme.colors.surface }}
+                color={theme.colors.primary}
+              />
+            )}
+            <View style={styles.headerText}>
+              <Text variant="titleLarge" style={[styles.name, { color: theme.colors.onPrimaryContainer }]}>
+                {isAuthenticated ? user?.name : 'Welcome'}
+              </Text>
+              <Text variant="bodySmall" style={[styles.email, { color: theme.colors.onPrimaryContainer }]}>
+                {isAuthenticated ? user?.email : 'Sign in to submit requests and track tickets'}
+              </Text>
+            </View>
           </View>
-        </View>
-
-        {!isAuthenticated ? (
-          <Button mode="contained" icon="login" style={styles.signIn} onPress={() => navigation.navigate('Login')}>
-            Sign In
-          </Button>
-        ) : null}
+          {!isAuthenticated ? (
+            <Button mode="contained" icon="login" style={styles.signIn} onPress={() => navigation.navigate('Login')}>
+              Sign In
+            </Button>
+          ) : null}
+        </Surface>
 
         <List.Section>
           <List.Subheader>My Activity</List.Subheader>
@@ -97,14 +105,9 @@ export function ProfileScreen() {
         <List.Section>
           <List.Subheader>About</List.Subheader>
           <List.Item
-            title="Contact Developer"
+            title="Contact NurixSoft"
             left={(p) => <List.Icon {...p} icon="phone-outline" />}
             onPress={() => navigation.navigate('Contact')}
-          />
-          <List.Item
-            title="Download Resume"
-            left={(p) => <List.Icon {...p} icon="file-download-outline" />}
-            onPress={() => Linking.openURL(DEVELOPER.resumeUrl)}
           />
           <List.Item
             title="App Version"
@@ -126,11 +129,26 @@ export function ProfileScreen() {
 const styles = StyleSheet.create({
   safe: { flex: 1 },
   scroll: { paddingBottom: 40 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 16, padding: 20 },
+  headerCard: {
+    margin: spacing.lg,
+    borderRadius: radius.xl,
+    padding: spacing.lg,
+    overflow: 'hidden',
+    ...shadow.card,
+  },
+  headerBlob: {
+    position: 'absolute',
+    width: 170,
+    height: 170,
+    borderRadius: radius.full,
+    top: -70,
+    right: -50,
+  },
+  header: { flexDirection: 'row', alignItems: 'center', gap: spacing.lg },
   headerText: { flex: 1 },
-  name: { fontWeight: '800' },
-  email: { opacity: 0.65, marginTop: 2 },
-  signIn: { marginHorizontal: 16, marginBottom: 8, borderRadius: 10 },
-  themeRow: { paddingHorizontal: 16, paddingBottom: 12 },
-  signOut: { margin: 16, borderRadius: 10 },
+  name: { fontWeight: '800', letterSpacing: -0.3 },
+  email: { opacity: 0.8, marginTop: 2 },
+  signIn: { marginTop: spacing.lg, borderRadius: radius.md },
+  themeRow: { paddingHorizontal: spacing.lg, paddingBottom: spacing.md },
+  signOut: { margin: spacing.lg, borderRadius: radius.md },
 });

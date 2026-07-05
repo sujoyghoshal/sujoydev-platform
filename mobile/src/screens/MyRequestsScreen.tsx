@@ -1,29 +1,11 @@
 import React from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
-import { Card, Chip, Text, useTheme } from 'react-native-paper';
+import { Icon, Surface, Text, useTheme } from 'react-native-paper';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useAppSelector } from '../app/hooks';
 import { EmptyState } from '../components/EmptyState';
-import type { RequestStatus } from '../types';
-
-const STATUS_COLORS: Record<string, string> = {
-  Pending: '#D97706',
-  'In Review': '#2563EB',
-  Accepted: '#059669',
-  'In Progress': '#7C3AED',
-  Completed: '#059669',
-  Rejected: '#DC2626',
-  Open: '#D97706',
-  Fixed: '#059669',
-  Closed: '#64748B',
-};
-
-function StatusChip({ status }: { status: RequestStatus | string }) {
-  return (
-    <Chip compact mode="flat" textStyle={{ color: '#fff', fontSize: 11 }} style={{ backgroundColor: STATUS_COLORS[status] ?? '#64748B' }}>
-      {status}
-    </Chip>
-  );
-}
+import { StatusBadge } from '../components/ui/StatusBadge';
+import { radius, shadow, spacing } from '../theme/tokens';
 
 export function MyRequestsScreen() {
   const theme = useTheme();
@@ -46,27 +28,43 @@ export function MyRequestsScreen() {
           Project Requests
         </Text>
       ) : null}
-      {requests.map((r) => (
-        <Card key={r.id} mode="outlined" style={styles.card}>
-          <Card.Content>
+      {requests.map((r, index) => (
+        <Animated.View key={r.id} entering={FadeInDown.delay(index * 70).duration(400)}>
+          <Surface style={[styles.card, { backgroundColor: theme.colors.surface }]} elevation={0}>
             <View style={styles.row}>
-              <Text variant="titleSmall" style={styles.ticket}>
-                {r.ticket}
-              </Text>
-              <StatusChip status={r.status} />
+              <View style={styles.ticketRow}>
+                <Icon source="pound" size={14} color={theme.colors.primary} />
+                <Text variant="titleSmall" style={[styles.ticket, { color: theme.colors.primary }]}>
+                  {r.ticket}
+                </Text>
+              </View>
+              <StatusBadge status={r.status} />
             </View>
-            <Text variant="bodyMedium" style={styles.title}>
+            <Text variant="titleSmall" style={styles.title}>
               {r.projectType} · {r.priority} priority
             </Text>
-            <Text variant="bodySmall" numberOfLines={2} style={styles.description}>
+            <Text
+              variant="bodySmall"
+              numberOfLines={2}
+              style={[styles.description, { color: theme.colors.onSurfaceVariant }]}>
               {r.description}
             </Text>
-            <Text variant="bodySmall" style={styles.meta}>
-              {new Date(r.createdAt).toLocaleString('en-IN')}
-              {r.synced ? '' : ' · queued (will sync when online)'}
-            </Text>
-          </Card.Content>
-        </Card>
+            <View style={styles.metaRow}>
+              <Icon source="calendar-clock-outline" size={13} color={theme.colors.onSurfaceVariant} />
+              <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                {new Date(r.createdAt).toLocaleString('en-IN')}
+              </Text>
+              {!r.synced ? (
+                <>
+                  <Icon source="cloud-upload-outline" size={13} color={theme.colors.tertiary} />
+                  <Text variant="bodySmall" style={{ color: theme.colors.tertiary }}>
+                    queued — will sync when online
+                  </Text>
+                </>
+              ) : null}
+            </View>
+          </Surface>
+        </Animated.View>
       ))}
 
       {bugs.length > 0 ? (
@@ -74,40 +72,77 @@ export function MyRequestsScreen() {
           Bug Reports
         </Text>
       ) : null}
-      {bugs.map((b) => (
-        <Card key={b.id} mode="outlined" style={styles.card}>
-          <Card.Content>
+      {bugs.map((b, index) => (
+        <Animated.View key={b.id} entering={FadeInDown.delay(index * 70).duration(400)}>
+          <Surface style={[styles.card, { backgroundColor: theme.colors.surface }]} elevation={0}>
             <View style={styles.row}>
-              <Text variant="titleSmall" style={styles.ticket}>
-                {b.ticket}
-              </Text>
-              <StatusChip status={b.status} />
+              <View style={styles.ticketRow}>
+                <Icon source="pound" size={14} color={theme.colors.primary} />
+                <Text variant="titleSmall" style={[styles.ticket, { color: theme.colors.primary }]}>
+                  {b.ticket}
+                </Text>
+              </View>
+              <StatusBadge status={b.status} />
             </View>
-            <Text variant="bodyMedium" style={styles.title}>
+            <Text variant="titleSmall" style={styles.title}>
               {b.title}
             </Text>
-            <Text variant="bodySmall" style={styles.meta}>
-              {b.deviceInfo} · v{b.appVersion} · {new Date(b.createdAt).toLocaleDateString('en-IN')}
-              {b.synced ? '' : ' · queued'}
-            </Text>
-          </Card.Content>
-        </Card>
+            <View style={styles.metaRow}>
+              <Icon source="cellphone" size={13} color={theme.colors.onSurfaceVariant} />
+              <Text variant="bodySmall" style={{ color: theme.colors.onSurfaceVariant }}>
+                {b.deviceInfo} · v{b.appVersion} · {new Date(b.createdAt).toLocaleDateString('en-IN')}
+              </Text>
+              {!b.synced ? (
+                <>
+                  <Icon source="cloud-upload-outline" size={13} color={theme.colors.tertiary} />
+                  <Text variant="bodySmall" style={{ color: theme.colors.tertiary }}>
+                    queued
+                  </Text>
+                </>
+              ) : null}
+            </View>
+          </Surface>
+        </Animated.View>
       ))}
-      <Text variant="bodySmall" style={[styles.footer, { color: theme.colors.onSurfaceVariant }]}>
-        Status updates arrive automatically once the request is reviewed.
-      </Text>
+
+      <View style={[styles.infoBanner, { backgroundColor: theme.colors.surfaceVariant }]}>
+        <Icon source="information-outline" size={16} color={theme.colors.onSurfaceVariant} />
+        <Text variant="bodySmall" style={[styles.footer, { color: theme.colors.onSurfaceVariant }]}>
+          Status updates arrive automatically once the request is reviewed.
+        </Text>
+      </View>
     </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  scroll: { padding: 16, paddingBottom: 40 },
-  section: { fontWeight: '800', marginBottom: 12, marginTop: 8 },
-  card: { marginBottom: 12 },
+  scroll: { padding: spacing.lg, paddingBottom: 40 },
+  section: { fontWeight: '800', marginBottom: spacing.md, marginTop: spacing.sm },
+  card: {
+    marginBottom: spacing.md,
+    borderRadius: radius.lg,
+    padding: spacing.lg,
+    ...shadow.card,
+  },
   row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  ticket: { fontWeight: '700', letterSpacing: 0.5 },
-  title: { marginTop: 8, fontWeight: '600' },
-  description: { opacity: 0.7, marginTop: 4 },
-  meta: { opacity: 0.55, marginTop: 8 },
-  footer: { textAlign: 'center', marginTop: 12 },
+  ticketRow: { flexDirection: 'row', alignItems: 'center', gap: 2 },
+  ticket: { fontWeight: '800', letterSpacing: 0.4 },
+  title: { marginTop: spacing.sm + 2, fontWeight: '700' },
+  description: { marginTop: spacing.xs, lineHeight: 19 },
+  metaRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    gap: 5,
+    marginTop: spacing.sm + 2,
+  },
+  infoBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: spacing.sm,
+    borderRadius: radius.md,
+    padding: spacing.md,
+    marginTop: spacing.sm,
+  },
+  footer: { flex: 1, lineHeight: 18 },
 });

@@ -37,7 +37,15 @@ function Tabs() {
         headerShown: false,
         tabBarActiveTintColor: theme.colors.primary,
         tabBarInactiveTintColor: theme.colors.onSurfaceVariant,
-        tabBarStyle: { backgroundColor: theme.colors.surface, borderTopColor: theme.colors.outline },
+        tabBarLabelStyle: { fontWeight: '700', fontSize: 11 },
+        tabBarStyle: {
+          backgroundColor: theme.colors.surface,
+          borderTopWidth: 0,
+          elevation: 12,
+          height: 62,
+          paddingBottom: 8,
+          paddingTop: 6,
+        },
         tabBarIcon: ({ focused, color, size }) => {
           const icons = TAB_ICONS[route.name as keyof TabParamList];
           return (
@@ -63,10 +71,12 @@ export function RootNavigator() {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerStyle: { backgroundColor: theme.colors.surface },
+        headerStyle: { backgroundColor: theme.colors.background },
+        headerShadowVisible: false,
         headerTintColor: theme.colors.onSurface,
-        headerTitleStyle: { fontWeight: '700' },
+        headerTitleStyle: { fontWeight: '800' },
         contentStyle: { backgroundColor: theme.colors.background },
+        animation: 'slide_from_right',
       }}>
       <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
       <Stack.Screen name="ProjectDetail" component={ProjectDetailScreen} options={{ title: 'Project' }} />

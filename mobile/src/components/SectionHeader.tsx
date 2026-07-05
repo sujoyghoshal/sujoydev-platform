@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Text, Button } from 'react-native-paper';
+import { Text, Button, useTheme } from 'react-native-paper';
+import { radius, spacing } from '../theme/tokens';
 
 interface Props {
   title: string;
@@ -10,20 +11,22 @@ interface Props {
 }
 
 export function SectionHeader({ title, subtitle, actionLabel, onAction }: Props) {
+  const theme = useTheme();
   return (
     <View style={styles.row}>
+      <View style={[styles.accent, { backgroundColor: theme.colors.primary }]} />
       <View style={styles.titles}>
         <Text variant="titleLarge" style={styles.title}>
           {title}
         </Text>
         {subtitle ? (
-          <Text variant="bodySmall" style={styles.subtitle}>
+          <Text variant="bodySmall" style={[styles.subtitle, { color: theme.colors.onSurfaceVariant }]}>
             {subtitle}
           </Text>
         ) : null}
       </View>
       {actionLabel && onAction ? (
-        <Button mode="text" compact onPress={onAction}>
+        <Button mode="text" compact onPress={onAction} icon="arrow-right" contentStyle={styles.actionContent}>
           {actionLabel}
         </Button>
       ) : null}
@@ -36,11 +39,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginTop: 28,
-    marginBottom: 12,
-    paddingHorizontal: 16,
+    marginTop: spacing.xxl,
+    marginBottom: spacing.md,
+    paddingHorizontal: spacing.lg,
   },
-  titles: { flex: 1, marginRight: 8 },
-  title: { fontWeight: '700' },
-  subtitle: { opacity: 0.7, marginTop: 2 },
+  accent: {
+    width: 4,
+    height: 22,
+    borderRadius: radius.full,
+    marginRight: 10,
+  },
+  titles: { flex: 1, marginRight: spacing.sm },
+  title: { fontWeight: '800', letterSpacing: -0.3 },
+  subtitle: { marginTop: 2 },
+  actionContent: { flexDirection: 'row-reverse' },
 });

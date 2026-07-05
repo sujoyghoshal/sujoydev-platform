@@ -172,7 +172,7 @@ export function ProjectRequestScreen({ route, navigation }: RootScreenProps<'Pro
         {errors.description?.message ?? ''}
       </HelperText>
 
-      <Button mode="contained" style={styles.submit} loading={isSubmitting} disabled={isSubmitting} onPress={handleSubmit(onSubmit)}>
+      <Button mode="contained" icon="send" style={styles.submit} contentStyle={{ paddingVertical: 4, flexDirection: 'row-reverse' }} loading={isSubmitting} disabled={isSubmitting} onPress={handleSubmit(onSubmit)}>
         Submit Request
       </Button>
       <Text variant="bodySmall" style={styles.note}>
@@ -200,6 +200,6 @@ const styles = StyleSheet.create({
   multiline: { minHeight: 130 },
   groupLabel: { fontWeight: '700', marginBottom: 8, marginTop: 4 },
   chipWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 18 },
-  submit: { marginTop: 12, borderRadius: 10 },
+  submit: { marginTop: 12, borderRadius: 14 },
   note: { opacity: 0.55, textAlign: 'center', marginTop: 12 },
 });

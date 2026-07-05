@@ -138,7 +138,7 @@ export function BugReportScreen({ navigation }: RootScreenProps<'BugReport'>) {
         </Text>
       </View>
 
-      <Button mode="contained" style={styles.submit} loading={isSubmitting} disabled={isSubmitting} onPress={handleSubmit(onSubmit)}>
+      <Button mode="contained" icon="send" style={styles.submit} contentStyle={{ paddingVertical: 4, flexDirection: 'row-reverse' }} loading={isSubmitting} disabled={isSubmitting} onPress={handleSubmit(onSubmit)}>
         Submit Bug Report
       </Button>
 

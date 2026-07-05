@@ -16,6 +16,7 @@ const fontConfig = {
 
 export const lightTheme = {
   ...MD3LightTheme,
+  roundness: 5,
   fonts: configureFonts({ config: fontConfig, isV3: true }),
   colors: {
     ...MD3LightTheme.colors,
@@ -38,6 +39,7 @@ export const lightTheme = {
 
 export const darkTheme = {
   ...MD3DarkTheme,
+  roundness: 5,
   fonts: configureFonts({ config: fontConfig, isV3: true }),
   colors: {
     ...MD3DarkTheme.colors,
