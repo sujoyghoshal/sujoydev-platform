@@ -29,7 +29,7 @@ export function LoginScreen({ navigation, route }: RootScreenProps<'Login'>) {
     try {
       const { profile, idToken } = await signInWithGoogle();
 
-      // Exchange the Google ID token for a SujoyDev JWT. If the backend is
+      // Exchange the Google ID token for a NurixSoft JWT. If the backend is
       // unreachable the local session still works; the API is simply not
       // authenticated until the next sign-in.
       if (idToken) {
@@ -55,7 +55,7 @@ export function LoginScreen({ navigation, route }: RootScreenProps<'Login'>) {
       signedIn({
         id: generateId(),
         name: 'Guest User',
-        email: 'guest@sujoydev.app',
+        email: 'guest@nurixsoft.app',
         provider: 'guest',
       }),
     );

@@ -2,7 +2,7 @@ import axios from 'axios';
 import { API_BASE_URL } from '../config/constants';
 
 /**
- * Axios instance for the SujoyDev backend. Screens read bundled portfolio
+ * Axios instance for the NurixSoft backend. Screens read bundled portfolio
  * content directly; this client is used for submissions (project requests,
  * bug reports) and future authenticated calls. Failures are handled by the
  * offline queue in the submission services.

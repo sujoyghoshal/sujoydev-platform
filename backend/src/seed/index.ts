@@ -21,7 +21,7 @@ async function seed(): Promise<void> {
   }
 
   const admin = await Admin.create({
-    name: 'Sujoy Ghoshal',
+    name: 'NurixSoft',
     email: env.adminBootstrap.email,
     password: env.adminBootstrap.password,
     role: 'superadmin',

@@ -1,7 +1,7 @@
-# Google Sign-In Setup — SujoyDev
+# Google Sign-In Setup — NurixSoft
 
 The code is fully wired: the app opens the native Google account picker, receives an
-ID token, and exchanges it at `POST /api/v1/auth/google` for a SujoyDev JWT
+ID token, and exchanges it at `POST /api/v1/auth/google` for a NurixSoft JWT
 (the backend verifies the token with Google and upserts the user in MongoDB).
 
 The only missing piece is a Google Cloud OAuth client, which must be created
@@ -22,10 +22,10 @@ Package name: `com.sujoydev.app`
 
 ## Steps (Google Cloud Console)
 
-1. Go to https://console.cloud.google.com → project dropdown → **New Project** → name it `SujoyDev` → Create.
+1. Go to https://console.cloud.google.com → project dropdown → **New Project** → name it `NurixSoft` → Create.
 2. **APIs & Services → OAuth consent screen**:
    - User type: **External** → Create.
-   - App name `SujoyDev`, support email `sujoyghshal.s@gmail.com`, developer email same → Save.
+   - App name `NurixSoft`, support email `supportsujoydev@gmail.com`, developer email same → Save.
    - Scopes: none needed beyond the defaults (email, profile). Save through to the end.
    - Under *Audience / Publishing status*, add yourself as a **test user** (until you publish the consent screen).
 3. **APIs & Services → Credentials → + Create credentials → OAuth client ID**, three times:
@@ -41,7 +41,7 @@ Package name: `com.sujoydev.app`
    - SHA-1: `7E:22:46:00:1F:7F:DE:3F:D9:2B:CD:1D:60:49:9A:CD:23:61:CA:C3`
 
    **c) Web client:**
-   - Application type: **Web application**, name `SujoyDev Backend`
+   - Application type: **Web application**, name `NurixSoft Backend`
    - No redirect URIs needed.
    - **Copy this client's ID** — it looks like `1234567890-abc123.apps.googleusercontent.com`. This is the only value that goes into code.
 

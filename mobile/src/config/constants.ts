@@ -1,11 +1,11 @@
 export const APP_VERSION = '1.0.0';
 
 /**
- * Point this at the deployed SujoyDev backend. While the API is unreachable the
+ * Point this at the deployed NurixSoft backend. While the API is unreachable the
  * app serves bundled portfolio content and queues submissions locally, then
  * syncs when connectivity to the API returns.
  */
-export const API_BASE_URL = 'http://10.0.2.2:5000/api/v1';
+export const API_BASE_URL = 'http://10.0.2.2:5001/api/v1';
 
 /**
  * OAuth 2.0 **Web client ID** from Google Cloud console → Credentials.
@@ -16,30 +16,25 @@ export const GOOGLE_WEB_CLIENT_ID =
   '10728362727-ffgs5dt0na8jbij8u6089paa3uhakj5u.apps.googleusercontent.com';
 
 export const DEVELOPER = {
-  name: 'Sujoy Ghoshal',
-  title: 'Full Stack Developer',
-  experience: '1+ Years Experience',
-  tagline: 'I build fast, reliable Android apps, websites and backend systems.',
+  name: 'NurixSoft',
+  title: 'Websites · Apps · UI/UX',
+  tagline: 'We design and build websites, Android & iOS apps and UI/UX for clients — proper delivery at budget-friendly prices.',
   about:
-    'Full Stack Developer specialising in React Native, React, Node.js and MongoDB. ' +
-    'I help businesses ship production-grade mobile apps, web platforms and REST APIs — ' +
-    'from first wireframe to Play Store release. Available for freelance projects.',
+    'NurixSoft is a freelance software studio working for clients worldwide. ' +
+    'We create websites, mobile apps (Play Store & App Store ready), backends and UI/UX designs — ' +
+    'production-grade quality, transparent pricing and on-time delivery, even on low budgets.',
   phone: '+918927673775',
   phoneDisplay: '8927673775',
-  email: 'sujoyghshal.s@gmail.com',
+  email: 'supportsujoydev@gmail.com',
   whatsapp: 'https://wa.me/918927673775',
-  github: 'https://github.com/sujoyghoshal',
-  linkedin: 'https://www.linkedin.com/in/sujoy-ghoshal',
-  portfolio: 'https://sujoydev.vercel.app',
-  resumeUrl:
-    'https://raw.githubusercontent.com/sujoyghoshal/SujoyDev/main/docs/resume/Sujoy_Ghoshal_Resume.pdf',
+  portfolio: 'https://nurixsoft.vercel.app',
   availableForFreelance: true,
 };
 
 export const STATS = [
   { label: 'Projects Delivered', value: '12+' },
   { label: 'Happy Clients', value: '8+' },
-  { label: 'Years Experience', value: '1+' },
+  { label: 'Services Offered', value: '10+' },
   { label: 'Technologies', value: '15+' },
 ];
 
@@ -61,21 +56,12 @@ export const TECH_STACK = [
   'MySQL',
 ];
 
-export const SKILLS = [
-  { name: 'React Native', level: 0.9 },
-  { name: 'React.js', level: 0.88 },
-  { name: 'Node.js + Express', level: 0.85 },
-  { name: 'MongoDB', level: 0.82 },
-  { name: 'TypeScript', level: 0.8 },
-  { name: 'UI / UX', level: 0.75 },
-];
-
 export const STORAGE_KEYS = {
-  auth: '@sujoydev/auth',
-  theme: '@sujoydev/theme',
-  favorites: '@sujoydev/favorites',
-  bookmarks: '@sujoydev/bookmarks',
-  requests: '@sujoydev/requests',
-  bugs: '@sujoydev/bugs',
-  cache: '@sujoydev/cache',
+  auth: '@nurixsoft/auth',
+  theme: '@nurixsoft/theme',
+  favorites: '@nurixsoft/favorites',
+  bookmarks: '@nurixsoft/bookmarks',
+  requests: '@nurixsoft/requests',
+  bugs: '@nurixsoft/bugs',
+  cache: '@nurixsoft/cache',
 } as const;

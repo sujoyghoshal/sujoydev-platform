@@ -68,7 +68,7 @@ export function ProfileScreen() {
           />
           <List.Item
             title="Report a Bug"
-            description="Something not working? Tell me."
+            description="Something not working? Tell us."
             left={(p) => <List.Icon {...p} icon="bug-outline" />}
             right={(p) => <List.Icon {...p} icon="chevron-right" />}
             onPress={() => navigation.navigate('BugReport')}

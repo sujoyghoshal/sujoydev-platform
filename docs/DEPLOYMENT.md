@@ -1,11 +1,11 @@
-# SujoyDev — Deployment Guide
+# NurixSoft — Deployment Guide
 
 ## 1. MongoDB Atlas (database)
 
 1. Create a free cluster at https://cloud.mongodb.com (M0 is fine to start).
-2. Database Access → add a user with password auth (readWrite on `sujoydev`).
+2. Database Access → add a user with password auth (readWrite on `nurixsoft`).
 3. Network Access → allow your server IP (or `0.0.0.0/0` temporarily during setup).
-4. Copy the connection string into `backend/.env` as `MONGODB_URI` (database name `sujoydev`).
+4. Copy the connection string into `backend/.env` as `MONGODB_URI` (database name `nurixsoft`).
 
 ## 2. Backend API
 
@@ -14,20 +14,20 @@
 1. Push the repo to GitHub.
 2. New Web Service → root directory `backend` → build `npm ci && npm run build` → start `node dist/server.js`.
 3. Add every variable from `backend/.env.example` in the dashboard's environment settings.
-4. Note the public URL (e.g. `https://sujoydev-api.onrender.com`) — health check: `GET /api/v1/health`.
+4. Note the public URL (e.g. `https://nurixsoft-api.onrender.com`) — health check: `GET /api/v1/health`.
 
 ### Option B — VPS with Docker
 
 ```bash
 # on the server
-git clone <repo> && cd SujoyDev
+git clone <repo> && cd NurixSoft
 cp backend/.env.example backend/.env   # fill real values
 cd deployment
 docker compose up -d --build
 ```
 
-TLS: issue a certificate with certbot for `api.sujoydev.app`, mounted via the
-`certbot-certs` volume (see `deployment/nginx/sujoydev.conf`). Until TLS is set
+TLS: issue a certificate with certbot for `api.nurixsoft.app`, mounted via the
+`certbot-certs` volume (see `deployment/nginx/nurixsoft.conf`). Until TLS is set
 up you can expose the API container port directly for testing.
 
 ## 3. Point the mobile app at the API

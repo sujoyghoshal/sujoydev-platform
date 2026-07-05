@@ -71,9 +71,9 @@ export function RootNavigator() {
       <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
       <Stack.Screen name="ProjectDetail" component={ProjectDetailScreen} options={{ title: 'Project' }} />
       <Stack.Screen name="BlogDetail" component={BlogDetailScreen} options={{ title: 'Article' }} />
-      <Stack.Screen name="Contact" component={ContactScreen} options={{ title: 'Contact Me' }} />
+      <Stack.Screen name="Contact" component={ContactScreen} options={{ title: 'Contact Us' }} />
       <Stack.Screen name="Login" component={LoginScreen} options={{ title: 'Sign In', presentation: 'modal' }} />
-      <Stack.Screen name="ProjectRequest" component={ProjectRequestScreen} options={{ title: 'Hire Me — Project Request' }} />
+      <Stack.Screen name="ProjectRequest" component={ProjectRequestScreen} options={{ title: 'Project Request' }} />
       <Stack.Screen name="BugReport" component={BugReportScreen} options={{ title: 'Report a Bug' }} />
       <Stack.Screen name="MyRequests" component={MyRequestsScreen} options={{ title: 'My Tickets' }} />
       <Stack.Screen name="Favorites" component={FavoritesScreen} options={{ title: 'Saved Items' }} />

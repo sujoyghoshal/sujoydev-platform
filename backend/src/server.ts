@@ -12,7 +12,7 @@ async function bootstrap(): Promise<void> {
 
   server.listen(env.port, () => {
     logger.info(
-      `SujoyDev API listening on port ${env.port} [${env.nodeEnv}] at ${env.apiPrefix}`,
+      `NurixSoft API listening on port ${env.port} [${env.nodeEnv}] at ${env.apiPrefix}`,
     );
   });
 

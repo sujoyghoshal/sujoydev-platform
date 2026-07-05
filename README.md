@@ -1,21 +1,20 @@
-# SujoyDev — Portfolio & Freelancing Platform
+# NurixSoft — Freelancing Services Platform
 
-<img src="docs/assets/profile.jpg" width="120" align="right" alt="Sujoy Ghoshal" style="border-radius: 50%" />
-
-**Developer:** Sujoy Ghoshal · Full Stack Developer
+**Company:** NurixSoft — Freelance Software Studio
 **Package:** `com.sujoydev.app`
-**Contact:** sujoyghshal.s@gmail.com · +91 8927673775
-**Resume:** [docs/resume/Sujoy_Ghoshal_Resume.pdf](docs/resume/Sujoy_Ghoshal_Resume.pdf)
+**Contact:** supportsujoydev@gmail.com · +91 8927673775
 
-A commercial-grade freelancing platform: portfolio showcase, client management,
-project request pipeline, bug reporting, and a full admin CRM.
+A commercial-grade freelancing platform built for clients: we design and deliver
+websites, Android & iOS apps (Play Store / App Store), backends and UI/UX at
+budget-friendly prices — with a project request pipeline, ticket tracking,
+bug reporting, and a full admin CRM behind it.
 
 ---
 
 ## Repository Layout (Monorepo)
 
 ```
-SujoyDev/
+NurixSoft/
 ├── backend/          Node.js + Express + TypeScript REST API (Socket.IO, FCM, Cloudinary)
 ├── admin/            React 18 + Vite + TypeScript + MUI admin dashboard
 ├── mobile/           React Native (TypeScript) Android application

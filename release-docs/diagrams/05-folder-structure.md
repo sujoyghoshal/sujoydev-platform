@@ -1,9 +1,9 @@
-# SujoyDev — Folder Structure (annotated, v1.0.0)
+# NurixSoft — Folder Structure (annotated, v1.0.0)
 
 Legend: ✅ implemented · 🔜 planned folder (from architecture spec)
 
 ```
-SujoyDev/                                  Monorepo root (git, v1.0.0 tagged 2026-07-05)
+NurixSoft/                                  Monorepo root (git, v1.0.0 tagged 2026-07-05)
 │
 ├── backend/                               ✅ Node.js + Express + TypeScript REST API
 │   ├── src/
@@ -90,14 +90,13 @@ SujoyDev/                                  Monorepo root (git, v1.0.0 tagged 202
 │
 ├── deployment/
 │   ├── docker-compose.yml                 ✅ API + MongoDB
-│   └── nginx/sujoydev.conf                ✅ reverse proxy
+│   └── nginx/nurixsoft.conf                ✅ reverse proxy
 │
 ├── docs/
 │   ├── ARCHITECTURE.md  DEPLOYMENT.md     ✅
 │   ├── GOOGLE_AUTH.md  PLAYSTORE.md       ✅
 │   ├── PRIVACY_POLICY.md  TERMS.md        ✅
-│   ├── resume/Sujoy_Ghoshal_Resume.pdf    ✅
-│   └── assets/profile.jpg                 ✅
+│   ├──     ✅
 │
 ├── .github/  .vscode/  .gitignore         ✅
 └── README.md                              ✅ roadmap + conventions

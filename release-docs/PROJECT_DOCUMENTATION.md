@@ -1,14 +1,14 @@
-# SujoyDev — Complete Project Documentation (A → Z)
+# NurixSoft — Complete Project Documentation (A → Z)
 
-**Company:** SujoyDev · **Version:** 1.0.0 · **Doc date:** 2026-07-05
-**Developer:** Sujoy Ghoshal — Full Stack Developer · sujoyghshal.s@gmail.com · +91 8927673775
+**Company:** NurixSoft · **Version:** 1.0.0 · **Doc date:** 2026-07-05
+**Developer:** NurixSoft — Full Stack Developer · supportsujoydev@gmail.com · +91 8927673775
 **Package:** `com.sujoydev.app`
 
 ---
 
 ## Table of Contents
 
-1. [What is SujoyDev](#1-what-is-sujoydev)
+1. [What is NurixSoft](#1-what-is-NurixSoft)
 2. [Technology Stack](#2-technology-stack)
 3. [Monorepo Layout](#3-monorepo-layout)
 4. [System Architecture](#4-system-architecture)
@@ -26,15 +26,15 @@
 
 ---
 
-## 1. What is SujoyDev
+## 1. What is NurixSoft
 
-SujoyDev is a **commercial-grade portfolio + freelancing platform** with three applications sharing one backend:
+NurixSoft is a **commercial-grade portfolio + freelancing platform** with three applications sharing one backend:
 
 - **Android app** — public portfolio (projects, services, blogs, contact) plus authenticated client features: hire-me / project requests, bug reporting, ticket tracking, favorites, profile.
 - **Admin dashboard (web)** — a CRM for the freelancer: triage project requests and bug tickets, manage content, view analytics.
 - **REST API** — Node.js backend with MongoDB, JWT auth, RBAC, and a ticketing engine.
 
-Business goal: showcase Sujoy Ghoshal's work and convert visitors into clients, then manage those clients through a request → triage → delivery pipeline (Fiverr/Upwork-style feature scope, single-freelancer focus).
+Business goal: showcase NurixSoft's work and convert visitors into clients, then manage those clients through a request → triage → delivery pipeline (Fiverr/Upwork-style feature scope, single-freelancer focus).
 
 ## 2. Technology Stack
 
@@ -50,7 +50,7 @@ Business goal: showcase Sujoy Ghoshal's work and convert visitors into clients, 
 ## 3. Monorepo Layout
 
 ```
-SujoyDev/
+NurixSoft/
 ├── backend/          Node.js + Express + TypeScript REST API
 │   ├── src/
 │   │   ├── config/         env.ts, database.ts
@@ -82,8 +82,8 @@ SujoyDev/
 │       ├── data/portfolio.ts    static content (until content APIs ship)
 │       ├── theme/ · types/ · config/ · assets/
 │       ├── android/             Gradle project, signing config
-├── deployment/       docker-compose.yml · nginx/sujoydev.conf
-└── docs/             ARCHITECTURE, DEPLOYMENT, GOOGLE_AUTH, PLAYSTORE, PRIVACY_POLICY, TERMS, resume, assets
+├── deployment/       docker-compose.yml · nginx/nurixsoft.conf
+└── docs/             ARCHITECTURE, DEPLOYMENT, GOOGLE_AUTH, PLAYSTORE, PRIVACY_POLICY, TERMS
 ```
 
 ## 4. System Architecture
@@ -206,7 +206,7 @@ The `counters` collection issues sequences atomically (findOneAndUpdate with $in
 | Component | Target | Artifacts |
 |---|---|---|
 | Backend | Docker on VPS / Render / Railway | `backend/Dockerfile`, `deployment/docker-compose.yml` |
-| Reverse proxy | Nginx (TLS termination, proxy to API) | `deployment/nginx/sujoydev.conf` |
+| Reverse proxy | Nginx (TLS termination, proxy to API) | `deployment/nginx/nurixsoft.conf` |
 | Database | MongoDB Atlas | connection via `MONGODB_URI` env |
 | Admin | Vercel (static Vite build) | `admin/dist` |
 | Android | Google Play Store | `docs/PLAYSTORE.md` checklist, signing config in `mobile/android`, Privacy Policy + Terms ready |
@@ -215,7 +215,7 @@ Run order: configure `.env` from `.env.example` → `docker compose up` (API + M
 
 ## 13. Implemented vs Pending — Full Status
 
-> Full colour-coded detail lives in the Excel tracker: **SujoyDev_Project_Tracker_v1.0.0.xlsx** (8 sheets).
+> Full colour-coded detail lives in the Excel tracker: **NurixSoft_Project_Tracker_v1.0.0.xlsx** (8 sheets).
 
 | Area | Done | Pending | ~% |
 |---|---|---|---|
@@ -238,23 +238,23 @@ Run order: configure `.env` from `.env.example` → `docker compose up` (API + M
 
 ```bash
 # Backend
-cd SujoyDev/backend
+cd NurixSoft/backend
 cp .env.example .env        # fill MONGODB_URI, JWT secrets, GOOGLE_CLIENT_ID
 npm install
 npm run dev                 # API on http://localhost:5000/api/v1/health
 
 # Admin
-cd SujoyDev/admin
+cd NurixSoft/admin
 cp .env.example .env        # VITE_API_URL
 npm install
 npm run dev                 # http://localhost:5173
 
 # Mobile (Android)
-cd SujoyDev/mobile
+cd NurixSoft/mobile
 npm install
 npx react-native run-android
 ```
 
 ---
 
-*Document generated 2026-07-05 for SujoyDev v1.0.0. Companion files: `RELEASE_NOTES_v1.0.0.md`, `SujoyDev_Project_Tracker_v1.0.0.xlsx`, `diagrams/`.*
+*Document generated 2026-07-05 for NurixSoft v1.0.0. Companion files: `RELEASE_NOTES_v1.0.0.md`, `NurixSoft_Project_Tracker_v1.0.0.xlsx`, `diagrams/`.*

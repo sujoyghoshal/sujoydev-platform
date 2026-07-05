@@ -1,4 +1,4 @@
-# SujoyDev — System Architecture
+# NurixSoft — System Architecture
 
 ## 1. High-Level Topology
 

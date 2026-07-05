@@ -1,4 +1,4 @@
-# SujoyDev — Ticket Lifecycle (v1.0.0)
+# NurixSoft — Ticket Lifecycle (v1.0.0)
 
 ## Project Request Pipeline (PRQ-YYYYMM-XXXX)
 

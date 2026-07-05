@@ -59,7 +59,7 @@ export default function DashboardLayout() {
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
       <Toolbar>
         <Typography variant="h6" color="primary">
-          SujoyDev Admin
+          NurixSoft Admin
         </Typography>
       </Toolbar>
       <Divider />
@@ -101,7 +101,7 @@ export default function DashboardLayout() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            {NAV_ITEMS.find((i) => i.path === location.pathname)?.label ?? 'SujoyDev'}
+            {NAV_ITEMS.find((i) => i.path === location.pathname)?.label ?? 'NurixSoft'}
           </Typography>
           <Tooltip title="Toggle theme">
             <IconButton color="inherit" onClick={() => dispatch(toggleMode())}>

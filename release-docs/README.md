@@ -1,6 +1,6 @@
-# 📦 SujoyDev — Release Documentation Package (v1.0.0)
+# 📦 NurixSoft — Release Documentation Package (v1.0.0)
 
-**Company:** SujoyDev · **Generated:** 2026-07-05 · **Covers:** SujoyDev monorepo v1.0.0 (released 2026-07-05)
+**Company:** NurixSoft · **Generated:** 2026-07-05 · **Covers:** NurixSoft monorepo v1.0.0 (released 2026-07-05)
 
 This folder lives **outside** the project repo and contains the complete release documentation set.
 
@@ -8,7 +8,7 @@ This folder lives **outside** the project repo and contains the complete release
 
 | File | What it is |
 |---|---|
-| **[SujoyDev_Project_Tracker_v1.0.0.xlsx](SujoyDev_Project_Tracker_v1.0.0.xlsx)** | 🎨 Colour-coded Excel tracker — 8 sheets: Overview, Roadmap Phases, Feature Tracker A–Z (56 features), Dashboard Features, API Endpoints, Database Models, Pending Backlog (with target dates), Release v1.0.0 timeline |
+| **[NurixSoft_Project_Tracker_v1.0.0.xlsx](NurixSoft_Project_Tracker_v1.0.0.xlsx)** | 🎨 Colour-coded Excel tracker — 8 sheets: Overview, Roadmap Phases, Feature Tracker A–Z (56 features), Dashboard Features, API Endpoints, Database Models, Pending Backlog (with target dates), Release v1.0.0 timeline |
 | **[PROJECT_DOCUMENTATION.md](PROJECT_DOCUMENTATION.md)** | 📘 Full A→Z project documentation — stack, architecture, API reference, database design, security, deployment, status, roadmap, run guide |
 | **[RELEASE_NOTES_v1.0.0.md](RELEASE_NOTES_v1.0.0.md)** | 🚀 Production-style release notes — features, commit timeline with times, known limitations, next releases |
 | **[diagrams/01-system-architecture.md](diagrams/01-system-architecture.md)** | 🏗 System architecture + request-flow diagrams (Mermaid) |

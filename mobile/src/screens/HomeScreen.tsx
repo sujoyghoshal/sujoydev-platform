@@ -1,11 +1,9 @@
 import React from 'react';
-import { ScrollView, StyleSheet, View, Linking } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 import {
-  Avatar,
   Button,
   Card,
   Chip,
-  ProgressBar,
   Surface,
   Text,
   useTheme,
@@ -15,7 +13,7 @@ import { useNavigation, CompositeNavigationProp } from '@react-navigation/native
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { DEVELOPER, STATS, SKILLS, TECH_STACK } from '../config/constants';
+import { DEVELOPER, STATS, TECH_STACK } from '../config/constants';
 import { PROJECTS, TESTIMONIALS, BLOG_POSTS } from '../data/portfolio';
 import { SectionHeader } from '../components/SectionHeader';
 import { ProjectCard } from '../components/ProjectCard';
@@ -49,24 +47,19 @@ export function HomeScreen() {
                     icon="circle"
                     style={[styles.availableChip, { backgroundColor: theme.colors.secondaryContainer }]}
                     textStyle={styles.availableText}>
-                    Available for freelance
+                    Accepting new projects
                   </Chip>
                 ) : null}
                 <Text variant="headlineMedium" style={[styles.heroName, { color: theme.colors.onPrimaryContainer }]}>
                   {DEVELOPER.name}
                 </Text>
                 <Text variant="titleMedium" style={{ color: theme.colors.onPrimaryContainer, opacity: 0.85 }}>
-                  {DEVELOPER.title} · {DEVELOPER.experience}
+                  {DEVELOPER.title}
                 </Text>
                 <Text variant="bodyMedium" style={[styles.tagline, { color: theme.colors.onPrimaryContainer }]}>
                   {DEVELOPER.tagline}
                 </Text>
               </View>
-              <Avatar.Image
-                size={84}
-                source={require('../assets/images/profile.jpg')}
-                style={{ backgroundColor: theme.colors.primary }}
-              />
             </View>
             <View style={styles.heroButtons}>
               <Button
@@ -74,7 +67,7 @@ export function HomeScreen() {
                 icon="briefcase-plus"
                 style={styles.heroButton}
                 onPress={() => navigation.navigate('ProjectRequest')}>
-                Hire Me
+                Request a Project
               </Button>
               <Button
                 mode="outlined"
@@ -103,37 +96,12 @@ export function HomeScreen() {
         </Animated.View>
 
         {/* About */}
-        <SectionHeader title="About Me" />
+        <SectionHeader title="About NurixSoft" />
         <Card mode="outlined" style={styles.blockCard}>
           <Card.Content>
             <Text variant="bodyMedium" style={styles.aboutText}>
               {DEVELOPER.about}
             </Text>
-            <Button
-              mode="text"
-              icon="file-download-outline"
-              style={styles.resumeBtn}
-              onPress={() => Linking.openURL(DEVELOPER.resumeUrl)}>
-              Download Resume
-            </Button>
-          </Card.Content>
-        </Card>
-
-        {/* Skills */}
-        <SectionHeader title="Skills" />
-        <Card mode="outlined" style={styles.blockCard}>
-          <Card.Content style={styles.skillList}>
-            {SKILLS.map((skill) => (
-              <View key={skill.name}>
-                <View style={styles.skillRow}>
-                  <Text variant="bodyMedium">{skill.name}</Text>
-                  <Text variant="bodySmall" style={styles.skillPct}>
-                    {Math.round(skill.level * 100)}%
-                  </Text>
-                </View>
-                <ProgressBar progress={skill.level} style={styles.skillBar} />
-              </View>
-            ))}
           </Card.Content>
         </Card>
 
@@ -256,11 +224,6 @@ const styles = StyleSheet.create({
   statLabel: { opacity: 0.7, marginTop: 2 },
   blockCard: { marginHorizontal: 16, marginBottom: 10 },
   aboutText: { opacity: 0.85, lineHeight: 21, marginTop: 4 },
-  resumeBtn: { alignSelf: 'flex-start', marginTop: 8, marginLeft: -8 },
-  skillList: { gap: 12 },
-  skillRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 5 },
-  skillPct: { opacity: 0.6 },
-  skillBar: { height: 7, borderRadius: 4 },
   featuredRow: { paddingHorizontal: 16, paddingBottom: 4 },
   techWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, paddingHorizontal: 16 },
   techChip: { backgroundColor: 'transparent' },

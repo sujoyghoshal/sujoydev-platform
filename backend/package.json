@@ -1,8 +1,8 @@
 {
-  "name": "sujoydev-backend",
+  "name": "nurixsoft-backend",
   "version": "1.0.0",
-  "description": "SujoyDev freelancing platform REST API",
-  "author": "Sujoy Ghoshal <sujoyghshal.s@gmail.com>",
+  "description": "NurixSoft freelancing platform REST API",
+  "author": "NurixSoft <supportsujoydev@gmail.com>",
   "license": "UNLICENSED",
   "private": true,
   "main": "dist/server.js",

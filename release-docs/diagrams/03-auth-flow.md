@@ -1,4 +1,4 @@
-# SujoyDev — Authentication Flows (v1.0.0)
+# NurixSoft — Authentication Flows (v1.0.0)
 
 ## Google Sign-In (Mobile) — implemented & verified 2026-07-05 13:19
 

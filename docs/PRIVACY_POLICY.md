@@ -1,10 +1,10 @@
-# Privacy Policy — SujoyDev
+# Privacy Policy — NurixSoft
 
 **Effective date:** 5 July 2026
-**App:** SujoyDev (`com.sujoydev.app`)
-**Developer:** Sujoy Ghoshal · Contact: sujoyghshal.s@gmail.com · +91 8927673775
+**App:** NurixSoft (`com.sujoydev.app`)
+**Developer:** NurixSoft · Contact: supportsujoydev@gmail.com · +91 8927673775
 
-This Privacy Policy explains what information the SujoyDev app collects, how it is used, and the choices you have.
+This Privacy Policy explains what information the NurixSoft app collects, how it is used, and the choices you have.
 
 ## 1. Information We Collect
 
@@ -39,7 +39,7 @@ We do **not** sell, rent or share your personal information with third parties. 
 
 ## 6. Your Rights
 
-You may request a copy or deletion of any data you have submitted by emailing **sujoyghshal.s@gmail.com** from the address used in the submission. Deletion requests are honoured within 30 days.
+You may request a copy or deletion of any data you have submitted by emailing **supportsujoydev@gmail.com** from the address used in the submission. Deletion requests are honoured within 30 days.
 
 ## 7. Children
 
@@ -51,4 +51,4 @@ We may update this policy; material changes will be reflected by a new effective
 
 ## 9. Contact
 
-Questions about this policy: **sujoyghshal.s@gmail.com**
+Questions about this policy: **supportsujoydev@gmail.com**

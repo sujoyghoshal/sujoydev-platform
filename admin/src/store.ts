@@ -7,7 +7,7 @@ interface AuthState {
   admin: AdminUser | null;
 }
 
-const persisted = sessionStorage.getItem('sujoydev.admin');
+const persisted = sessionStorage.getItem('nurixsoft.admin');
 
 const authSlice = createSlice({
   name: 'auth',
@@ -16,12 +16,12 @@ const authSlice = createSlice({
     loggedIn(state, action: PayloadAction<{ admin: AdminUser; accessToken: string }>) {
       state.admin = action.payload.admin;
       setAccessToken(action.payload.accessToken);
-      sessionStorage.setItem('sujoydev.admin', JSON.stringify(action.payload.admin));
+      sessionStorage.setItem('nurixsoft.admin', JSON.stringify(action.payload.admin));
     },
     loggedOut(state) {
       state.admin = null;
       setAccessToken(null);
-      sessionStorage.removeItem('sujoydev.admin');
+      sessionStorage.removeItem('nurixsoft.admin');
     },
   },
 });
@@ -33,12 +33,12 @@ interface UiState {
 const uiSlice = createSlice({
   name: 'ui',
   initialState: {
-    mode: (localStorage.getItem('sujoydev.themeMode') as 'light' | 'dark') ?? 'light',
+    mode: (localStorage.getItem('nurixsoft.themeMode') as 'light' | 'dark') ?? 'light',
   } as UiState,
   reducers: {
     toggleMode(state) {
       state.mode = state.mode === 'light' ? 'dark' : 'light';
-      localStorage.setItem('sujoydev.themeMode', state.mode);
+      localStorage.setItem('nurixsoft.themeMode', state.mode);
     },
   },
 });

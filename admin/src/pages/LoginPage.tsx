@@ -64,7 +64,7 @@ export default function LoginPage() {
           <Box sx={{ textAlign: 'center', mb: 3 }}>
             <LockOutlinedIcon color="primary" sx={{ fontSize: 40 }} />
             <Typography variant="h5" sx={{ mt: 1 }}>
-              SujoyDev Admin
+              NurixSoft Admin
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Sign in with your administrator account

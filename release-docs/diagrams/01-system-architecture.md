@@ -1,4 +1,4 @@
-# SujoyDev — System Architecture (v1.0.0)
+# NurixSoft — System Architecture (v1.0.0)
 
 > Solid nodes = implemented in v1.0.0 · dashed/“planned” notes = pending phases.
 
@@ -10,7 +10,7 @@ flowchart TB
     end
 
     subgraph Edge["Edge / Deployment"]
-        NGINX["Nginx Reverse Proxy<br/>deployment/nginx/sujoydev.conf"]
+        NGINX["Nginx Reverse Proxy<br/>deployment/nginx/nurixsoft.conf"]
     end
 
     subgraph API["Backend — Node.js + Express + TypeScript (Docker)"]

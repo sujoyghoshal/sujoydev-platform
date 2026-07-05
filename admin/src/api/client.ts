@@ -8,14 +8,14 @@ export const api = axios.create({
   withCredentials: true,
 });
 
-let accessToken: string | null = sessionStorage.getItem('sujoydev.accessToken');
+let accessToken: string | null = sessionStorage.getItem('nurixsoft.accessToken');
 
 export function setAccessToken(token: string | null): void {
   accessToken = token;
   if (token) {
-    sessionStorage.setItem('sujoydev.accessToken', token);
+    sessionStorage.setItem('nurixsoft.accessToken', token);
   } else {
-    sessionStorage.removeItem('sujoydev.accessToken');
+    sessionStorage.removeItem('nurixsoft.accessToken');
   }
 }
 

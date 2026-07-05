@@ -9,7 +9,7 @@ const router = Router();
 router.get('/health', (_req: Request, res: Response) => {
   res.status(200).json({
     success: true,
-    message: 'SujoyDev API is running',
+    message: 'NurixSoft API is running',
     data: {
       uptime: Math.floor(process.uptime()),
       timestamp: new Date().toISOString(),

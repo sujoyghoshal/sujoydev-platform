@@ -1,6 +1,6 @@
-# SujoyDev — Google Play Store Release Guide
+# NurixSoft — Google Play Store Release Guide
 
-Package: `com.sujoydev.app` · Developer: Sujoy Ghoshal
+Package: `com.sujoydev.app` · Developer: NurixSoft
 
 Follow these phases in order. Items marked ⚙️ are already automated in this repo.
 
@@ -35,12 +35,12 @@ Create app → fill:
 
 | Field | Value |
 |---|---|
-| App name | SujoyDev — Portfolio & Hire |
+| App name | NurixSoft — Portfolio & Hire |
 | Default language | English (India) — en-IN |
 | App or game | App |
 | Free or paid | Free |
 | Category | Business (or Productivity) |
-| Contact email | sujoyghshal.s@gmail.com |
+| Contact email | supportsujoydev@gmail.com |
 
 ## Phase D — Store listing assets
 
@@ -50,14 +50,14 @@ Required (create in Figma/Canva; sizes are mandatory):
 - **Feature graphic:** 1024 × 500 PNG/JPG
 - **Phone screenshots:** minimum 2, recommended 4–8, 16:9 or 9:16, each side 320–3840 px. Capture from the emulator: `adb exec-out screencap -p > shot1.png`
 - **Short description** (≤ 80 chars):
-  `Hire Sujoy Ghoshal — Android apps, websites & backends. Portfolio + requests.`
+  `Hire NurixSoft — Android apps, websites & backends. Portfolio + requests.`
 - **Full description** (≤ 4000 chars): describe portfolio browsing, services with pricing, project requests with ticket tracking, bug reporting, blog, dark mode.
 
 ## Phase E — Policy declarations (App content section)
 
 All of these must be completed before release:
 
-1. **Privacy policy URL** — host `docs/PRIVACY_POLICY.md` publicly (e.g. `https://sujoydev.vercel.app/privacy`) and paste the URL.
+1. **Privacy policy URL** — host `docs/PRIVACY_POLICY.md` publicly (e.g. `https://nurixsoft.vercel.app/privacy`) and paste the URL.
 2. **Data safety form** — declare truthfully for this app:
    - Collects: **Name, Email** (only when the user signs in with Google) — purpose: account management; not shared with third parties; user can request deletion.
    - Project request form data (name, email, phone) — purpose: app functionality (contacting you back).

@@ -1,6 +1,6 @@
-# SujoyDev — Release Notes
+# NurixSoft — Release Notes
 
-<p align="center"><b>Company:</b> SujoyDev &nbsp;·&nbsp; <b>Product:</b> SujoyDev — Portfolio & Freelancing Platform &nbsp;·&nbsp; <b>Package:</b> com.sujoydev.app</p>
+<p align="center"><b>Company:</b> NurixSoft &nbsp;·&nbsp; <b>Product:</b> NurixSoft — Freelancing Services Platform &nbsp;·&nbsp; <b>Package:</b> com.sujoydev.app</p>
 
 ---
 
@@ -17,16 +17,15 @@
 
 ## 📌 Summary
 
-First production-grade release of the SujoyDev freelancing platform monorepo. This release ships a **working end-to-end client pipeline**:
+First production-grade release of the NurixSoft freelancing platform monorepo. This release ships a **working end-to-end client pipeline**:
 
 > User signs in with Google → submits a **Project Request** or **Bug Report** → receives a ticket number (`PRQ-YYYYMM-XXXX` / `BUG-YYYYMM-XXXX`) → tracks the status in the app → admin triages it in the web dashboard.
 
 ## ✨ New Features
 
 ### Mobile App (Android, `com.sujoydev.app`)
-- **13 screens live:** Home (hero, about, skills, stats, featured projects), Projects + Project Detail, Services, Blog + Blog Detail, Contact, Login, Profile, Favorites, Project Request, Bug Report, My Requests (ticket tracker).
+- **12 screens live:** Home (agency hero, services, stats, featured projects), Projects + Project Detail, Services, Blog + Blog Detail, Contact, Login, Profile, Favorites, Project Request, Bug Report, My Requests (ticket tracker).
 - **Real Google Sign-In** with backend ID-token exchange — verified on emulator (commit `25e641a`).
-- Real profile photo and downloadable resume bundled.
 - Browse-without-login model — auth required only for requests, bugs, profile, favorites.
 - Material Design theming, reusable card components, ticket tracking service.
 
@@ -47,14 +46,14 @@ First production-grade release of the SujoyDev freelancing platform monorepo. Th
 ### Deployment & Docs
 - Backend `Dockerfile`, `docker-compose.yml`, Nginx reverse-proxy config.
 - `.env.example` templates for backend and admin.
-- Docs shipped: Architecture, Deployment guide, Google Auth setup, Play Store checklist, Privacy Policy, Terms & Conditions, resume.
+- Docs shipped: Architecture, Deployment guide, Google Auth setup, Play Store checklist, Privacy Policy, Terms & Conditions.
 
 ## 🕐 Release Timeline (2026-07-05)
 
 | Time (IST) | Commit | Change |
 |---|---|---|
-| 12:32 | `a7d3029` | 🎉 Initial release: SujoyDev freelancing platform v1.0.0 |
-| 12:44 | `cb3f9b2` | ✨ Add real profile photo and resume |
+| 12:32 | `a7d3029` | 🎉 Initial release: NurixSoft freelancing platform v1.0.0 |
+| 12:44 | `cb3f9b2` | ✨ Add brand assets |
 | 12:44 | `6f68d4a` | 🧹 Remove Demo folder (assets moved to docs/ and mobile assets) |
 | 12:54 | `0b9cf7a` | ✨ Wire real Google Sign-In with backend token exchange |
 | 13:19 | `25e641a` | ✅ Configure Google OAuth Web client ID — Sign-In verified on emulator |
@@ -88,4 +87,4 @@ First production-grade release of the SujoyDev freelancing platform monorepo. Th
 
 ---
 
-**Developer:** Sujoy Ghoshal · Full Stack Developer · sujoyghshal.s@gmail.com · +91 8927673775
+**Developer:** NurixSoft — Freelance Software Studio · supportsujoydev@gmail.com · +91 8927673775

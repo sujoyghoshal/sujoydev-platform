@@ -7,7 +7,7 @@ import { UserProfile } from '../types';
 
 export interface GoogleSignInResult {
   profile: UserProfile;
-  /** Google ID token — exchanged with the backend for a SujoyDev JWT. */
+  /** Google ID token — exchanged with the backend for a NurixSoft JWT. */
   idToken: string | null;
 }
 

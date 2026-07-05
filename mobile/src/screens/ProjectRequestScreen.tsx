@@ -92,7 +92,7 @@ export function ProjectRequestScreen({ route, navigation }: RootScreenProps<'Pro
   return (
     <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <Text variant="bodyMedium" style={styles.intro}>
-        Tell me about your project and I’ll get back with a plan, timeline and quote.
+        Tell us about your project and we’ll get back with a plan, timeline and quote.
       </Text>
 
       {(

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linking, ScrollView, StyleSheet, View } from 'react-native';
-import { Avatar, List, Surface, Text, useTheme } from 'react-native-paper';
+import { List, Surface, Text, useTheme } from 'react-native-paper';
 import { DEVELOPER } from '../config/constants';
 
 interface ContactAction {
@@ -14,9 +14,7 @@ const ACTIONS: ContactAction[] = [
   { icon: 'phone', title: 'Call', description: DEVELOPER.phoneDisplay, url: `tel:${DEVELOPER.phone}` },
   { icon: 'whatsapp', title: 'WhatsApp', description: 'Chat on WhatsApp', url: DEVELOPER.whatsapp },
   { icon: 'email', title: 'Email', description: DEVELOPER.email, url: `mailto:${DEVELOPER.email}` },
-  { icon: 'linkedin', title: 'LinkedIn', description: 'Connect professionally', url: DEVELOPER.linkedin },
-  { icon: 'github', title: 'GitHub', description: 'Browse my open source work', url: DEVELOPER.github },
-  { icon: 'web', title: 'Portfolio', description: 'sujoydev.vercel.app', url: DEVELOPER.portfolio },
+  { icon: 'web', title: 'Portfolio', description: 'nurixsoft.vercel.app', url: DEVELOPER.portfolio },
 ];
 
 export function ContactScreen() {
@@ -30,10 +28,9 @@ export function ContactScreen() {
               Let’s talk about your project
             </Text>
             <Text variant="bodyMedium" style={{ color: theme.colors.onPrimaryContainer, opacity: 0.85, marginTop: 6 }}>
-              I usually reply within a few hours. Choose whichever channel works best for you.
+              We usually reply within a few hours. Choose whichever channel works best for you.
             </Text>
           </View>
-          <Avatar.Image size={64} source={require('../assets/images/profile.jpg')} />
         </View>
       </Surface>
 

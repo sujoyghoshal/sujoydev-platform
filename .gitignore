@@ -51,3 +51,6 @@ coverage/
 
 # Signing secrets
 keystore.properties
+
+# Office lock files
+~$*

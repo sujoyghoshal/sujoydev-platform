@@ -1,12 +1,12 @@
-# Terms & Conditions — SujoyDev
+# Terms & Conditions — NurixSoft
 
 **Effective date:** 5 July 2026
-**App:** SujoyDev (`com.sujoydev.app`) · **Developer:** Sujoy Ghoshal
+**App:** NurixSoft (`com.sujoydev.app`) · **Developer:** NurixSoft
 
-By downloading or using the SujoyDev app, you agree to these terms.
+By downloading or using the NurixSoft app, you agree to these terms.
 
 ## 1. Purpose of the App
-SujoyDev showcases the developer's portfolio and lets you contact, hire, or submit project requests and bug reports to the developer. The app is provided free of charge.
+NurixSoft showcases the developer's portfolio and lets you contact, hire, or submit project requests and bug reports to the developer. The app is provided free of charge.
 
 ## 2. Accounts
 You may browse without an account. Signing in (Google or Guest) is required only to submit requests, report bugs and save favorites. You are responsible for the accuracy of information you submit.
@@ -18,7 +18,7 @@ Submitting a request is an enquiry, not a contract. Prices shown for services ar
 You agree not to submit unlawful, abusive, or spam content through the app's forms, and not to attempt to disrupt, reverse engineer, or gain unauthorised access to the app or its backend services.
 
 ## 5. Intellectual Property
-All app content — portfolio items, blog articles, branding and code — belongs to Sujoy Ghoshal unless otherwise stated. You may not reproduce it commercially without permission.
+All app content — portfolio items, blog articles, branding and code — belongs to NurixSoft unless otherwise stated. You may not reproduce it commercially without permission.
 
 ## 6. Disclaimer
 The app is provided "as is" without warranties of any kind. To the maximum extent permitted by law, the developer is not liable for indirect or consequential damages arising from use of the app.
@@ -30,4 +30,4 @@ Access may be suspended for accounts that violate these terms.
 These terms are governed by the laws of India. Disputes are subject to the jurisdiction of the courts of West Bengal, India.
 
 ## 9. Contact
-sujoyghshal.s@gmail.com · +91 8927673775
+supportsujoydev@gmail.com · +91 8927673775

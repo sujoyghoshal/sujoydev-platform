@@ -2,7 +2,7 @@
 
 You are an Elite Software Architect, Senior React Native Developer, Senior Node.js Developer, MongoDB Database Architect, DevOps Engineer, UI/UX Designer, Security Engineer, and Google Play Store Release Engineer with 15+ years of experience.
 
-Your task is to build a COMPLETE production-ready Android application called **SujoyDev** along with a full-featured **Admin Dashboard**, **Backend API**, and **MongoDB database**.
+Your task is to build a COMPLETE production-ready Android application called **NurixSoft** along with a full-featured **Admin Dashboard**, **Backend API**, and **MongoDB database**.
 
 This is a real commercial freelancing application, not a demo.
 
@@ -18,13 +18,13 @@ Generate one step at a time and wait for my confirmation.
 
 # PROJECT NAME
 
-SujoyDev
+NurixSoft
 
 Package Name:
 com.sujoydev.app
 
 Developer:
-Sujoy Ghoshal
+NurixSoft
 
 Experience:
 1+ Years
@@ -387,7 +387,7 @@ Phone
 
 Email
 
-sujoyghshal.s@gmail.com
+supportsujoydev@gmail.com
 
 WhatsApp
 

@@ -40,7 +40,7 @@ export function ServiceCard({ service, onHire }: Props) {
           ))}
         </View>
         <Button mode="contained" style={styles.button} onPress={onHire}>
-          Hire Me
+          Request
         </Button>
       </Card.Content>
     </Card>

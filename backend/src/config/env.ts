@@ -66,10 +66,10 @@ export const env: EnvConfig = {
     port: parseInt(optional('SMTP_PORT', '587'), 10),
     user: optional('SMTP_USER'),
     pass: optional('SMTP_PASS'),
-    from: optional('MAIL_FROM', 'SujoyDev <no-reply@sujoydev.app>'),
+    from: optional('MAIL_FROM', 'NurixSoft <no-reply@NurixSoft.app>'),
   },
   adminBootstrap: {
-    email: optional('ADMIN_EMAIL', 'sujoyghshal.s@gmail.com'),
+    email: optional('ADMIN_EMAIL', 'supportsujoydev@gmail.com'),
     password: optional('ADMIN_PASSWORD', ''),
   },
 };

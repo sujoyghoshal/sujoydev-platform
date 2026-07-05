@@ -1,4 +1,4 @@
-# SujoyDev — Entity-Relationship Diagram
+# NurixSoft — Entity-Relationship Diagram
 
 ## Implemented Collections (v1.0.0 — 7 collections)
 
